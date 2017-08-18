@@ -24,13 +24,6 @@ var articles= {
     
 };
 
-var articleOne= {
-    title: 'Mounika',
-    heading : 'Article One',
-    date : '29 Oct 1994',
-    content: `My name is mounika
-            I am working at TCS`
-};
 
 function createTemplate(data){
   var title=data.title;
