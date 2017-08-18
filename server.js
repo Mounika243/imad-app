@@ -13,6 +13,11 @@ var articleOne= {
             I am working at TCS`
 };
 
+function createTemplate(data){
+  var title=data.title;
+  var date=data.date;
+  var content=data.content;
+  var heading=data.heading;
 var htmlTemplate= `
 <html>
     <head>
@@ -36,7 +41,8 @@ var htmlTemplate= `
         </div>
      </body>
 </html> `;
-
+return htmlTemplate;
+}
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
@@ -45,7 +51,7 @@ app.get('/article_one', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'article_one.html'));
 });
 app.get('/article_two', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'article_two.html'));
+  res.send(createTemplate(articleOne));
 });
 
 app.get('/article_three', function (req, res) {
