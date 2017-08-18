@@ -5,6 +5,16 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
+var articleOne= {
+    title: 'Mounika',
+    heading : 'Article One',
+    date : '29 Oct 1994',
+    content: `My name is mounika
+            I am working at TCS`
+};
+
+
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
