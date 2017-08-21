@@ -64,6 +64,6 @@ var submit=document.getElementById('submit_btn');
     };
         var nameInput=document.getElementById('name');
          var name=nameInput.value;
-      request.open('GET','http://mounikanandikonda243.imad.hasura-app.io/submit-name?name='+name,true);
-    request.send(null);
+         request.open('GET','http://mounikanandikonda243.imad.hasura-app.io/submit-name?name='+name,true);
+          request.send(null);
  };
