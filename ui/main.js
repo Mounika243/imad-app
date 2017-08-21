@@ -34,6 +34,6 @@ button.onclick= function(){
         
     };
     
-    request.open('GET','http://http://mounikanandikonda243.imad.hasura-app.io/counter',true)
+    request.open('GET','http://mounikanandikonda243.imad.hasura-app.io/counter',true)
     request.send(null);
 };
