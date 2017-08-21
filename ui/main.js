@@ -49,6 +49,6 @@ var submit=document.getElementById('submit_btn');
      for(var i=0;i<names.length;i++){
          list ='<li>' + names[i] + '</li>';
      }
-     var ul=documnet.getElementById('namelist');
+     var ul=document.getElementById('namelist');
      ul.innerHTML=list;
  };
