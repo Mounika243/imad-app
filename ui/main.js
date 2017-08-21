@@ -4,6 +4,13 @@ element.innerHTML='New Value';
 
 //moving the image
 var img=document.getElementById('madi');
-img.onclick=function(){
-img.style.marginleft='100px';
+var marginleft=0;
+function moveRight() {
+    
+    marginleft=marginleft + 5;
+    img.style.marginleft= marginleft + 'px';
+}
+
+img.onclick= function(){
+     var interval=setInterval(moveRight,50);
 };
